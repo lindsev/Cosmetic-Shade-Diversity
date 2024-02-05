@@ -39,6 +39,4 @@ The app reads shade data from the notebooks/shades.csv file.
 Modify the code to explore different visualizations or data manipulations.
 Adjust layout and styling for visual preferences.
 ## Additional Notes:
-
-The app is designed for local usage. To share it, explore deployment options with Streamlit.
-Consider adding more features or visualizations as needed.
+Web app url: https://cosmetic-shade-diveristy.onrender.com
