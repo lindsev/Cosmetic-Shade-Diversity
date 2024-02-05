@@ -54,12 +54,18 @@ fig4.update_layout(showlegend=False, xaxis_title='Shade Lightness Value', yaxis_
 fig4.update_layout(title='Relationship Between Shade Lightness and Price Category')
 
 # Add checkboxes to toggle visibility
-show_histogram = st.checkbox("Show Histogram", True)
-show_scatter_plot = st.checkbox("Show Scatter Plot", True)
-
+show_histogram = st.checkbox("Show Histogram", False)
 # Display the charts based on checkbox values
 if show_histogram:
     st.plotly_chart(fig3, use_container_width=True)
 
+show_scatter_plot = st.checkbox("Show Scatter Plot", False)
+# Display the charts based on checkbox values
 if show_scatter_plot:
     st.plotly_chart(fig4, use_container_width=True)
+
+show_all_plots = st.checkbox("Show Scatter Plot", True)
+# Display the charts based on checkbox values
+if show_all_plots:
+    st.plotly_chart(fig4, use_container_width=True)
+    st.plotly_chart(fig3, use_container_width=True)
