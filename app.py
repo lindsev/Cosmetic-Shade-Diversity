@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import numpy as np
 
 st.header('Data Viewer')
 shades = pd.read_csv('notebooks/shades.csv')
